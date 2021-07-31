@@ -1,0 +1,53 @@
+.logo{
+    cursor: pointer;
+    color: var(--color-primary);
+    font-family: 'Playfair Display', serif;
+}
+.header-container{
+    padding: 15px 20px;
+}
+.header-container>.ant-row>.ant-col{
+    align-self: center;
+}
+.header_search input, .header_search button{
+    height: 50px;
+    font-size: 16px;
+}
+.header_search input{
+    border-radius: 5px;
+    color: var(--color-primary);
+    border: 3px solid var(--color-primary);
+}
+.header_search button{
+    background-color: var(--color-primary);
+    border-color: var(--color-primary) ;
+}
+.btn_link span{
+    color: var(--color-primary);
+}
+.cart_shoping>span{
+    font-size: 30px;
+    color: var(--color-primary) ;
+    border-radius: 100%;
+    padding:5px;
+    cursor: pointer;
+    border: 2px solid var(--color-primary) ;
+}
+nav{
+    padding:  15px 20px;
+    color: white;
+    background-color: var(--color-primary);
+}
+@media screen and (max-width: 767px) {
+    .logo{
+        position: relative;
+        top: -15px;
+        left: -20px;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        width: 100vw;
+      
+        background-color: var(--color-primary);
+    }
+  }

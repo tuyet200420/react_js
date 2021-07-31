@@ -1,0 +1,19 @@
+:root{
+    --color-primary:brown;
+}
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'STIX Two Math', serif;
+    font-size: 16px;
+}
+.notfound{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/notFound.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

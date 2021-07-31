@@ -1,0 +1,53 @@
+.header_full-layout{
+    padding: 0 20px;
+    height: 50px;
+    /* width: 100%; */
+    background-color: var(--color-primary);
+}
+.register_container{
+    position: relative;
+}
+.register{
+    position: relative;
+    margin-right: 500px;
+    background-image:url(../images/background_user.jpeg);
+    height: calc(100vh -  126px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: showRegisterMain linear .3s;
+}
+.register::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.308);
+    width: 100%;
+    height: 100%; 
+}
+.register_form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height:calc(100vh -  126px);
+    width: 500px;
+    transition: linear 3s;
+    background-color: #360c0c48;
+    animation: showRegister linear .1s;
+}
+@keyframes showRegister{
+    from {
+        opacity: 0;
+        transform: translateX(100%);}
+    to {
+        opacity: 1;
+        transform: translateX(0);}
+}
+@keyframes showRegisterMain{
+    from {
+        opacity: 0;
+        margin-right: 0;}
+    to {
+        opacity: 1;
+        margin-right: 500px;}
+}
